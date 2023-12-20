@@ -1,0 +1,73 @@
+/* Add this to your styles or use a separate CSS file */
+
+.navbar {
+    background-color: #888; /* Grey background color */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+  }
+  
+  .hamburger {
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+  }
+  
+  .menu {
+    display: flex;
+    flex-direction: column;
+    background-color: #555; /* Darker grey for the menu background */
+    position: absolute;
+    top: 90px; /* Adjust the top position as needed */
+    left: 0;
+    width: 400px;
+    padding: 5px;
+    height: 100%;
+  }
+  .subMenu{
+    display: flex;
+    flex-direction: column;
+    background-color: #555; /* Darker grey for the menu background */
+    position: absolute;
+    left :102%;
+    width :60%;
+    height: fit-content;
+
+  }
+  .menu a {
+    color: white;
+    text-decoration: none;
+    padding: 7px;
+    text-align: left;
+  }
+  
+  .menu a:hover {
+    background-color: #777; /* Darker grey on hover */
+  }
+  
+  /* CardComponent.css */
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 2%;
+ /* justify-content: space-between; */
+}
+
+.card {
+  width: 30%; /* Adjust as needed, considering margin and padding */
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Media query for responsiveness - adjust as needed */
+@media (max-width: 768px) {
+  .card {
+    width: 25%;
+    height :50% /* Adjust for smaller screens */
+  }
+}

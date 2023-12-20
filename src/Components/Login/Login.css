@@ -1,0 +1,108 @@
+
+
+.wavesuitlogo {
+    width: 95%;
+    height: 60%;
+    margin-top : 10%;
+    margin-left : 7%;
+}
+
+.nokialogo {
+     margin-top: 4%; 
+     margin-right :40%;
+     width: 30%;
+     height:10%;
+
+}
+
+.inputtexts{
+    margin-bottom: 10px;
+     border: 1px solid #B2BEB5;
+      margin-right:15vh;width: 50%; height: 20px;
+}
+.labels{
+    color: grey; 
+    font-size: smaller;
+    margin-right:57vh;
+}
+@media (max-width: 1115px) {
+    /* Apply these styles when the viewport width is 768 pixels or less */
+    .labels {
+      padding-right: 58%;
+      margin-right: 0; /* Reset margin-right when padding is added */
+    }
+    .wavesuitText{
+        font-size: 2vh;
+        padding-left: 10%;
+   }
+
+   .checkboxField {
+    margin-left: 15vh;
+   }
+   .checkboxText{
+    color: black; font-size: smaller; padding-right: 20%;
+}
+  }
+.wavesuitText{
+    font-size: 3vh;
+    margin-right: 40%;
+    margin-top: 1%;
+}
+.mainDiv{
+    display: flex;
+     height: 100vh; 
+}
+
+.leftPanelDiv{
+    flex: 1; 
+}
+.rightPanelDiv{
+    flex: 1; padding: 2%; 
+    box-sizing: border-box;
+}
+.buttonDiv{
+    padding-top: 7vh; display: flex; align-items: center; justify-content: space-between;
+}
+.signInbutton{
+    background: navy; color: white; border: none; padding: 10px; border-radius: 5px; cursor: pointer; width: 18vh ;margin-right:32%;
+}
+
+.checkboxField{
+    cursor: pointer; margin-left: 18vh;
+}
+.checkboxText{
+    color: black; font-size: small; padding-right: 10%;
+}
+
+.page-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .blur {
+    opacity: 0.5; /* Add blur effect to the entire page */
+  }
+  
+  .loading-indicator-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999; /* Ensure it's on top of other elements */
+  }
+  
+  .loading-indicator {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    border-top: 4px solid #03375a;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  

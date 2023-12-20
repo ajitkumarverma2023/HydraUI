@@ -1,0 +1,202 @@
+{
+    "system": {
+      "config": {
+        "hostname": "WEBUI"
+      },
+      "state": {
+        "hostname": "WEBUI",
+        "current-datetime": "2022-11-11T10:38:41.076053Z",
+        "boot-time": 1657723014000000000
+      },
+      "ntp": {
+        "config": "",
+        "state": "",
+        "servers": {
+          "server": [
+            {
+              "address": "21.22.23.34",
+              "config": {
+                "address": "21.22.23.34"
+              },
+              "state": {
+                "address": "21.22.23.34",
+                "port": 123,
+                "version": 4,
+                "association-type": "SERVER",
+                "stratum": 16,
+                "root-delay": 0,
+                "root-dispersion": 0,
+                "offset": 0,
+                "poll-interval": 512
+              }
+            },
+            {
+              "address": "135.104.232.1",
+              "config": {
+                "address": "135.104.232.1"
+              },
+              "state": {
+                "address": "135.104.232.1",
+                "port": 123,
+                "version": 4,
+                "association-type": "SERVER",
+                "stratum": 16,
+                "root-delay": 0,
+                "root-dispersion": 0,
+                "offset": 0,
+                "poll-interval": 512
+              }
+            }
+          ]
+        }
+      },
+      "logging": {
+        "remote-servers": ""
+      },
+      "aaa": {
+        "authentication": {
+          "config": {
+            "authentication-method": [
+              "oc-aaa-types:RADIUS_ALL",
+              "oc-aaa-types:LOCAL"
+            ]
+          },
+          "state": {
+            "authentication-method": [
+              "oc-aaa-types:RADIUS_ALL",
+              "oc-aaa-types:LOCAL"
+            ]
+          },
+          "users": {
+            "user": [
+              {
+                "username": "admin",
+                "config": {
+                  "username": "admin",
+                  "role": "oc-aaa-types:SYSTEM_ROLE_ADMIN",
+                  "password-change-interval": 0,
+                  "user-status": "n-oc-aaa-ext:USER_STATUS_ENABLED"
+                },
+                "state": {
+                  "username": "admin",
+                  "role": "oc-aaa-types:SYSTEM_ROLE_ADMIN",
+                  "password-change-interval": 0,
+                  "user-status": "n-oc-aaa-ext:USER_STATUS_ENABLED",
+                  "password-status": "ACTIVE",
+                  "password-expiration-date": 4102444799000000000,
+                  "last-login": 1668163050000000000
+                }
+              },
+              {
+                "username": "adminuser",
+                "config": {
+                  "username": "adminuser",
+                  "role": "n-oc-aaa-ext:SYSTEM_ROLE_OBSERVER",
+                  "password-change-interval": 30,
+                  "user-status": "n-oc-aaa-ext:USER_STATUS_ENABLED"
+                },
+                "state": {
+                  "username": "adminuser",
+                  "role": "n-oc-aaa-ext:SYSTEM_ROLE_OBSERVER",
+                  "password-change-interval": 30,
+                  "user-status": "n-oc-aaa-ext:USER_STATUS_ENABLED",
+                  "password-status": "ACTIVE",
+                  "password-expiration-date": 1669875282000000000
+                }
+              },
+              {
+                "username": "service",
+                "config": {
+                  "username": "service",
+                  "role": "n-oc-aaa-ext:SYSTEM_ROLE_SERVICE",
+                  "password-change-interval": 0,
+                  "user-status": "n-oc-aaa-ext:USER_STATUS_DISABLED"
+                },
+                "state": {
+                  "username": "service",
+                  "role": "n-oc-aaa-ext:SYSTEM_ROLE_SERVICE",
+                  "password-change-interval": 0,
+                  "user-status": "n-oc-aaa-ext:USER_STATUS_DISABLED",
+                  "password-status": "ACTIVE",
+                  "password-expiration-date": 4102444799000000000
+                }
+              }
+            ]
+          },
+          "user-systemwide": {
+            "config": {
+              "max-failed-login": 3,
+              "min-wait-login": 4,
+              "allowed-login-after-expired": 3,
+              "aging-grace-period": 7,
+              "password-change-on-first-login": true,
+              "password-history-size": 10,
+              "min-password-length": 8
+            },
+            "state": {
+              "max-failed-login": 3,
+              "min-wait-login": 4,
+              "allowed-login-after-expired": 3,
+              "aging-grace-period": 7,
+              "password-change-on-first-login": true,
+              "password-history-size": 10,
+              "min-password-length": 8
+            }
+          }
+        },
+        "authorization": {
+          "config": {
+            "authorization-method": "oc-aaa-types:LOCAL"
+          },
+          "state": {
+            "authorization-method": "oc-aaa-types:LOCAL"
+          },
+          "authorization-mode": {
+            "state": {
+              "authorization-mode": "AUTHORIZATION_MODE_CMD_BY_CMD"
+            }
+          }
+        },
+        "server-groups": ""
+      },
+      "alarms": "",
+      "alarm": [
+        {
+          "id": 5743,
+          "config": "",
+          "state": {
+            "id": 5743,
+            "resource": "system",
+            "text": "No committed software load (Autoinstall disabled)",
+            "time-created": 1667202710000000000,
+            "severity": "oc-alarm-types:MINOR",
+            "type-id": "SWUPGCOMMIT"
+          }
+        },
+        {
+          "id": 5741,
+          "config": "",
+          "state": {
+            "id": 5741,
+            "resource": "CARD-1-1",
+            "text": "Card missing",
+            "time-created": 1667202710000000000,
+            "severity": "oc-alarm-types:CRITICAL",
+            "type-id": "REPLUNITMISS"
+          }
+        },
+        {
+          "id": 14327,
+          "config": "",
+          "state": {
+            "id": 14327,
+            "resource": "TRANSCEIVER-1-1-C1",
+            "text": "Underlying resource unavailable - Section",
+            "time-created": 1667825976000000000,
+            "severity": "oc-alarm-types:MAJOR",
+            "type-id": "URU-S"
+          }
+        }
+      ]
+    }
+  }

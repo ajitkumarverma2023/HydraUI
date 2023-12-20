@@ -1,0 +1,22 @@
+.dynamic-table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .dynamic-table th, .dynamic-table td {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 8px;
+  }
+  
+  .dynamic-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .dynamic-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .dynamic-table tbody tr:hover {
+    background-color: #e6f7ff;
+  }
+  

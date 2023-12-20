@@ -1,0 +1,82 @@
+{
+    "data":[
+    
+    {
+       "moduleName" : "netconf",
+       "xmlns" : "urn:ietf:params:xml:ns:netmod:notification",
+       "children" : ["streams"]
+    },
+    {
+      "moduleName" : "terminal-device",
+      "xmlns"      : "http://openconfig.net/yang/terminal-device",
+      "children" : ["config","state","logical-channels" , "operational-modes"]
+    },
+    {
+        "moduleName" : "connection-verification-discovery-tool",
+        "xmlns" : "http://nokia.com/yang/nokia-openconfig-pdt",
+        "children" : null
+    },
+    {
+        "moduleName" : "rerouting-groups",
+        "xmlns" : "http://nokia.com/yang/nokia-optics-oc-rerouting",
+        "children" : null
+    },
+    {
+        "moduleName" : "telemetry-system",
+        "xmlns" : "http://openconfig.net/yang/telemetry",
+        "children" : ["subscriptions"]
+    },
+    {
+        "moduleName" : "wavelength-router",
+        "xmlns" : "http://openconfig.net/yang/wavelength-router",
+        "children" : ["media-channels","port-spectrum-power-profiles"]
+    },
+    {
+        "moduleName" : "channel-monitors",
+        "xmlns" : "http://openconfig.net/yang/channel-monitor",
+        "children" : null
+    },
+    {
+        "moduleName" : "optical-amplifier",
+        "xmlns" : "http://openconfig.net/yang/optical-amplfier",
+        "children" : ["amplifiers"]
+    },
+    {
+        "moduleName" : "optical-attenuator",
+        "xmlns" : "http://openconfig.net/yang/optical-attenuator",
+        "children" : ["attenuators"]
+    },
+    {
+        "moduleName" : "interfaces",
+        "xmlns" : "http://openconfig.net/yang/interfaces",
+        "children" : ["interface"]
+    },
+    {
+        "moduleName" : "network-instances",
+        "xmlns" : "http://openconfig.net/yang/network-instance",
+        "children" : ["network-instance"]
+    },
+    {
+        "moduleName" : "relay-agent",
+        "xmlns" : "http://openconfig.net/yang/relay-agent",
+        "children" : ["dhcp","dhcpv6"]
+    },
+    {
+        "moduleName" : "connections",
+        "xmlns" : "http://openconfig.net/yang/openconfig-transport-line-connectivity",
+        "children" : ["connection"]
+    },
+    {
+        "moduleName" : "routing-policy",
+        "xmlns" : "http://openconfig.net/yang/routing-policy",
+        "children" : ["defined-sets","policy-definitions"]
+    },
+    {
+        "moduleName" : "netconf-state",
+        "xmlns" : "urn:ietf:params:xml:ns:yang:ietf-netconf-monitoring",
+        "children" : ["capabilities","datastores","schemas"]
+    }
+ 
+  
+         ]
+}
